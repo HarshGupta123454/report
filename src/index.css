@@ -6,7 +6,7 @@
 }
 .container{
   width: 95vw;
-  margin: 3rem auto;
+  margin: 1rem auto;
 }
 input::placeholder{
   text-align: center;

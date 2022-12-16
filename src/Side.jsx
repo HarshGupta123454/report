@@ -9,8 +9,10 @@ export default function Side(props) {
     const select_change = (event) => {
         setvalue(event.target.value)
     }
+    
   return (
     <>
+    {/* <button onClick={details}>cross</button> */}
     <div className={props.disp?'side-bar click':'side-bar'}>
                 <div className='side-heading'>
                     <h1 className='heading'>Shreyan Daga</h1>
