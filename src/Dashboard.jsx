@@ -47,8 +47,8 @@ export default function Dashboard() {
                 </div>
             </div>
            
-        <Tables query={[student]}/>
-        <Tables query={[educators]}/>
+        <Tables query={[student]} heading="Student Support"/>
+        <Tables query={[educators]} heading="Educator Support"/>
         
 
             

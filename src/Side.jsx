@@ -28,7 +28,7 @@ export default function Side(props) {
                     </select></div>
                 </div>
                 <div className="contact">
-                <input className='detail-issue-input input-number'  type="number" placeholder='1'/>
+                <input className='detail-issue-input input-number'  type="number" placeholder='+91'/>
                 <input className='detail-issue-input' type="tel" name="telphone" placeholder="888 888 8888" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12"  title="Ten digits code" required/>
                 <input className='detail-issue-input' type="email" placeholder='@gmail.com' /> 
                 <input className='detail-issue-input input-number'  type="number" placeholder='1'/>

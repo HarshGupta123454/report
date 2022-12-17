@@ -117,13 +117,12 @@
 
 /* //css for side-bar */
 .side-bar {
-    height: 95vh;
+    height: 100vh;
     width: 27vw;
     margin-left: 74%;
     position: absolute;
     top: 0;
     left: 100%;
-    padding: 1rem 0;
     background: #fff;
     transition: all 1s linear;
 }
@@ -215,7 +214,7 @@
 
 .detail-issue-input {
     background: #F4F4F4;
-    height: 1.3rem;
+    height: 1.1rem;
     border: none;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 7px;

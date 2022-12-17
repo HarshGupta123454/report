@@ -20,16 +20,20 @@ export default function Tables(props) {
     return (
         <>
             <div className="container border">
-                <h2 style={{ padding: "6px 0px" }}>Student Support</h2>
+                <h2 style={{ padding: "6px 0px" }}>{props.heading}</h2>
                 <div className='dashboard-heading'>
                     <div className='inputs'>
-                        <input className='input' type="text" name="students" placeholder='students' />
+                        <select className='input select'>
+                            <option>Student</option>
+                        </select>
                         <select className='input select'  name="Query type">
                             {data.map((ele, index) =>
                                 <option value={ele[index]}>{ele}</option>
                             )}
                         </select>
-                        <input className='input' type="text" placeholder='Sources' />
+                        <select className='input select'>
+                            <option>Sources</option>
+                        </select>
                         <button className='button'>Add Query</button>
                     </div>
                     <div className='refund'><pre>Refunds: 2    <BsFillBellFill /> </pre></div>
