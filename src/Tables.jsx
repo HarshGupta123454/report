@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./dashboard.css"
 import { BsFillBellFill } from "react-icons/bs";
+import { BsWhatsapp} from "react-icons/bs";
 import Side from './Side';
 export default function Tables(props) {
     const [data] = [...props.query]
@@ -61,12 +62,13 @@ export default function Tables(props) {
 
                             </select></div></td>
                             <td>Source</td>
-                            <td>Action</td>
+                            <td><button className='template-history' style={{marginRight:"5px"}}><BsWhatsapp className="whatsapp"/>Template</button>
+                        <button className='template-history'><BsWhatsapp className="whatsapp"/>History</button></td>
                         </tr>
                         <tr>
                             <td>01</td>
                             <td>10:40</td>
-                            <td>Shreyaan Daga</td>
+                            <td onClick={details}>Shreyaan Daga</td>
                             <td>0987654321</td>
                             <td>Query type</td>
                             <td><div> <select value={value1} className={value1} onChange={select_change1}>
@@ -77,12 +79,13 @@ export default function Tables(props) {
 
                             </select></div></td>
                             <td>Source</td>
-                            <td>Action</td>
+                            <td><button className='template-history'style={{marginRight:"5px"}}><BsWhatsapp className="whatsapp"/>Template</button>
+                        <button className='template-history'><BsWhatsapp className="whatsapp"/>History</button></td>
                         </tr>
                         <tr>
                             <td>01</td>
                             <td>10:40</td>
-                            <td>Shreyaan Daga</td>
+                            <td onClick={details}>Shreyaan Daga</td>
                             <td>0987654321</td>
                             <td>Query type</td>
                             <td><div> <select value={value} className={value} onChange={select_change}>
@@ -93,13 +96,14 @@ export default function Tables(props) {
 
                             </select></div></td>
                             <td>Source</td>
-                            <td>Action</td>
+                            <td><button className='template-history'style={{marginRight:"5px"}}><BsWhatsapp className="whatsapp"/>Template</button>
+                        <button className='template-history'><BsWhatsapp className="whatsapp"/>History</button></td>
                         </tr>
 
                     </table>
                 </div>
             </div>
-            <Side disp={disp} />
+            <Side disp={disp} setdisp={setdisp} />
         </>
     )
 }

@@ -1,7 +1,9 @@
 import "./dashboard.css"
 import { BsFillTelephoneFill } from "react-icons/bs";
-import { AiOutlineCopy } from "react-icons/ai";
+import { AiFillCopy,AiOutlineClose } from "react-icons/ai";
 import { TiMessage} from "react-icons/ti";
+import { BsWhatsapp} from "react-icons/bs";
+import { IoChevronForwardOutline} from "react-icons/io5";
 import React,{useState} from 'react'
 
 export default function Side(props) {
@@ -9,11 +11,13 @@ export default function Side(props) {
     const select_change = (event) => {
         setvalue(event.target.value)
     }
+
     
   return (
     <>
-    {/* <button onClick={details}>cross</button> */}
+    
     <div className={props.disp?'side-bar click':'side-bar'}>
+    <button style={{display:"flex",justifyContent:"right",background:"transparent",border:"none",width:"95%",marginBottom:"0.2rem",fontSize:"17px",cursor:"pointer"}} onClick={()=> props.setdisp(false)}><AiOutlineClose/></button>
                 <div className='side-heading'>
                     <h1 className='heading'>Shreyan Daga</h1>
                     <div><select value={value} className={value} onChange={select_change}>
@@ -37,9 +41,9 @@ export default function Side(props) {
                     <div id='contact-icon'>
                         <button className='contact-icons_'><BsFillTelephoneFill/></button>
                         <button className='contact-icons_'><TiMessage/></button>
-                        <button className='contact-icons_'><AiOutlineCopy/></button>
-                        <button className='template-history'>Template</button>
-                        <button className='template-history'>History</button>
+                        <button className='contact-icons_'><AiFillCopy/></button>
+                        <button className='template-history'><BsWhatsapp className="whatsapp"/>Template</button>
+                        <button className='template-history'><BsWhatsapp className="whatsapp"/>History</button>
                     </div>
                 </div>
                 <div className='detail'>
@@ -54,6 +58,7 @@ export default function Side(props) {
                     <div className='comments'>
                         <h3>Comments  </h3>
                         <input className='comments-input' type="text" placeholder='Add comments' />
+                        <IoChevronForwardOutline style={{color:"white",background:"green",borderRadius:"50%",fontSize:"22px",cursor:"pointer"}}/>
                     </div>
 
                 </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import "./dashboard.css"
+
 import Tables from './Tables';
 const student=["Course curriculum & content",
     "Homework and assignment related issues",
@@ -33,6 +34,8 @@ const student=["Course curriculum & content",
         "Confirmation message not recieved on email & whatsapp",
         "Other"]
 export default function Dashboard() {
+    
+
     return (
         <>
             <div className="container">
